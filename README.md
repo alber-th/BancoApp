@@ -13,13 +13,20 @@ Rendimento mensal para poupança
 Tratamento de exceções de saldo insuficiente
 
 Estrutura de Pastas
-text
+
 BancoApp/
   └── src/
-      ├── excecoes/    // Exceção personalizada
-      ├── interfaces/  // Interface de operações
-      ├── modelos/     // Classes de conta
-      └── BancoApp.java // Principal
+      ├── excecoes/
+      │   └── SaldoInsuficienteException.java
+      ├── interfaces/
+      │   └── OperacoesBancarias.java
+      ├── modelos/
+      │   ├── Conta.java
+      │   ├── ContaCorrente.java
+      │   └── ContaPoupanca.java
+      └── BancoApp.java
+
+
 Como executar
 Compile todos os arquivos Java dentro da pasta src
 
